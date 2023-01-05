@@ -1,11 +1,14 @@
 import './index.css'
 
+import { inject } from '@vercel/analytics'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
 import App from './App'
 import { AlertProvider } from './context/AlertContext'
 import reportWebVitals from './reportWebVitals'
+
+inject()
 
 ReactDOM.render(
   <React.StrictMode>
